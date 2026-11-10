@@ -104,5 +104,4 @@ def reset():
     startup()
     return {"ok": True}
 
-
-app.mount("/", StaticFiles(directory=os.path.join(BASE, "..", "frontend"), html=True), name="ui")
+app.mount("/", StaticFiles(directory=os.path.join(BASE, "frontend"), html=True), name="ui")
